@@ -41,15 +41,26 @@
 
       <section class="element">
         <h3>In-text link</h3>
+        <h4>Rendered Element:</h4>
         <p>Visit our <a href="#">Support Center</a> for details.</p>
+        <h4>CSS Selector:</h4>
+        <p>
+          a<br>
+          a:hover
+        </p>
         <h4>Code:</h4>
         <code>&lt;a href="#"&gt;Support Center&lt;/a&gt;</code>
       </section>
 
       <section class="element">
         <h3>Navigation Link</h3>
+        <h4>Rendered Element:</h4>
         <p>Styled as a button for call-to-actions.</p>
         <a href="#" class="btn btn-primary">Shop Now</a>
+        <h4>CSS Selector:</h4>
+        <p>
+          .btn btn-primary
+        </p>
         <h4>Code:</h4>
         <code
           >&lt;a href="#" class="btn btn-primary"&gt;Shop Now&lt;/a&gt;</code
@@ -58,10 +69,17 @@
 
       <section class="element">
         <h3>Submit and Reset Buttons</h3>
+        <h4>Rendered Element:</h4>
         <div class="button-group">
           <button class="btn btn-primary">Submit Form</button>
           <button class="btn btn-reset">Reset</button>
         </div>
+        <h4>CSS Selector:</h4>
+        <p>
+          .button-group<br>
+          .btn btn-primary<br>
+          .btn btn-reset
+        </p>
         <h4>Code:</h4>
         <code
           >&lt;button class="btn btn-primary"&gt;Submit
@@ -71,14 +89,22 @@
 
       <section class="element">
         <h3>Text Input Field with Label</h3>
+        <h4>Rendered Element:</h4>
         <label class="form-label">Email Address</label>
         <input type="text" placeholder="name@arctech.com" />
+        <h4>CSS Selector:</h4>
+        <p>
+          .form-label<br>
+          input[type="text"]<br>
+          input[type="text"]:focus
+        </p>
         <h4>Code:</h4>
         <code>&lt;input type="text" placeholder="..."&gt;</code>
       </section>
 
       <section class="element">
         <h3>Radio Button with Label</h3>
+        <h4>Rendered Element:</h4>
         <form class="radio-group-container">
           <label class="radio-label">
             <input type="radio" name="opt" checked /> Brand New
@@ -87,12 +113,19 @@
             <input type="radio" name="opt" /> Refurbished
           </label>
         </form>
+        <h4>CSS Selector:</h4>
+        <p>
+          .radio-group-container<br>
+          .radio-label<br>
+          input[type="radio"]
+        </p>
         <h4>Code:</h4>
         <code>&lt;input type="radio" name="opt"&gt;</code>
       </section>
 
       <section class="element">
         <h3>Image as a Link (With Hover Animation)</h3>
+        <h4>Rendered Element:</h4>
         <p>Hover to see the zoom and overlay effect.</p>
         <a href="#" class="image-link-wrapper">
           <img
@@ -103,6 +136,14 @@
             <strong>View Workstations &rarr;</strong>
           </div>
         </a>
+        <h4>CSS Selector:</h4>
+        <p>
+          .image-link-wrapper<br>
+          .image-link-wrapper img<br>
+          .image-link-wrapper:hover img<br>
+          .image-overlay<br>
+          .image-link-wrapper:hover .image-overlay
+        </p>
         <h4>Code:</h4>
         <pre><code>.image-link-wrapper:hover img { transform: scale(1.15); }</code></pre>
       </section>
@@ -113,6 +154,7 @@
 
       <section class="element">
         <h3>Headings</h3>
+        <h4>Rendered Element:</h4>
         <h1>Heading Level 1</h1>
         <h2>Heading Level 2</h2>
         <h3>Heading Level 3</h3>
