@@ -164,6 +164,19 @@
             <a href="checkout.html">Cart (3)</a>
           </div>
         </nav>
+        <h4>Code:</h4>
+        <pre><code>&lt;nav class="navbar"&gt;
+  &lt;div class="logo"&gt;
+    &lt;a href="index.html"&gt;
+      Arc&lt;span&gt;Tech&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class="nav-items"&gt;
+    &lt;a href="products.html"&gt;Shop&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+</code></pre>
       </section>
 
       <section class="element">
@@ -183,6 +196,25 @@
             <button class="btn btn-ghost w-full mt-small">View Details</button>
           </div>
         </article>
+        <h4>Code:</h4>
+        <pre><code>&lt;article class="product-card"&gt;
+  &lt;div class="product-img-box"&gt;
+    &lt;img
+      src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&amp;fit=crop&amp;q=80&amp;w=600"
+      alt="ArcTech Monitor"
+    /&gt;
+  &lt;/div&gt;
+
+  &lt;div class="product-details"&gt;
+    &lt;h4 class="product-title"&gt;UltraWide 4K Monitor&lt;/h4&gt;
+    &lt;p class="product-desc"&gt;144Hz, IPS Panel, USB-C Docking.&lt;/p&gt;
+    &lt;span class="price"&gt;$599.00&lt;/span&gt;
+
+    &lt;button class="btn btn-primary w-full"&gt;Add to Cart&lt;/button&gt;
+    &lt;button class="btn btn-ghost w-full mt-small"&gt;View Details&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/article&gt;
+</code></pre>
       </section>
 
       <section class="element">
@@ -207,6 +239,31 @@
 
           <button class="btn btn-primary w-full">Pay Now</button>
         </form>
+        <h4>Code:</h4>
+        <pre><code>&lt;form class="max-w-400"&gt;
+  &lt;label class="form-label"&gt;Card Details&lt;/label&gt;
+  &lt;input
+    type="text"
+    placeholder="0000 0000 0000 0000"
+    class="mb-small"
+  /&gt;
+
+  &lt;label class="form-label"&gt;Payment Method&lt;/label&gt;
+  &lt;div class="radio-group-container"&gt;
+    &lt;label class="radio-label"&gt;
+      &lt;input type="radio" name="pay" checked /&gt;
+      Credit
+    &lt;/label&gt;
+
+    &lt;label class="radio-label"&gt;
+      &lt;input type="radio" name="pay" /&gt;
+      PayPal
+    &lt;/label&gt;
+  &lt;/div&gt;
+
+  &lt;button class="btn btn-primary w-full"&gt;Pay Now&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
       </section>
 
       <section class="element">
@@ -241,6 +298,38 @@
             <button class="btn btn-primary w-full">Proceed to Checkout</button>
           </div>
         </div>
+        <h4>Code:</h4>
+        <pre><code>&lt;div class="cart-container"&gt;
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Item&lt;/th&gt;
+        &lt;th&gt;Price&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;UltraWide 4K Monitor&lt;/td&gt;
+        &lt;td&gt;$599.00&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Mechanical Keyboard&lt;/td&gt;
+        &lt;td&gt;$149.00&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Total&lt;/td&gt;
+        &lt;td&gt;$748.00&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tfoot&gt;
+  &lt;/table&gt;
+
+  &lt;div class="cart-actions"&gt;
+    &lt;button class="btn btn-primary w-full"&gt;Proceed to Checkout&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
       </section>
     </section>
 
