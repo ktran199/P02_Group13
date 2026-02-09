@@ -177,6 +177,16 @@ h1 {
   width: 100%;
 }
 
+.github-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.github-logo {
+  width: 20px;
+}
+
 /* Swatch Utilities */
 .bg-primary {
   background: var(--primary);
