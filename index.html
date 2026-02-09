@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P01 Process Check</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h4 class="project-label">Project 01 • Process Check</h4>
+      <h1>ArcTech Style Guide</h1>
+      <p>
+        <strong>Brand Persona:</strong> "The Modern Architect." Precision,
+        high-performance, and future-forward. We use Emerald Green to signify
+        energy and efficiency.
+      </p>
+
+      <nav class="page-nav">
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="#branding">Brand Definition</a>
+        <a href="#brand_context">Brand Context</a>
+        <a href="#templates">Template Pages</a>
+        <a href="#citations">Citations</a>
+      </nav>
+    </header>
+
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <section class="element">
+        <h3>In-text link</h3>
+        <p>Visit our <a href="#">Support Center</a> for details.</p>
+        <h4>Code:</h4>
+        <code>&lt;a href="#"&gt;Support Center&lt;/a&gt;</code>
+      </section>
+
+      <section class="element">
+        <h3>Navigation Link</h3>
+        <p>Styled as a button for call-to-actions.</p>
+        <a href="#" class="btn btn-primary">Shop Now</a>
+        <h4>Code:</h4>
+        <code
+          >&lt;a href="#" class="btn btn-primary"&gt;Shop Now&lt;/a&gt;</code
+        >
+      </section>
+
+      <section class="element">
+        <h3>Submit and Reset Buttons</h3>
+        <div class="button-group">
+          <button class="btn btn-primary">Submit Form</button>
+          <button class="btn btn-reset">Reset</button>
+        </div>
+        <h4>Code:</h4>
+        <code
+          >&lt;button class="btn btn-primary"&gt;Submit
+          Form&lt;/button&gt;</code
+        >
+      </section>
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+        <label class="form-label">Email Address</label>
+        <input type="text" placeholder="name@arctech.com" />
+        <h4>Code:</h4>
+        <code>&lt;input type="text" placeholder="..."&gt;</code>
+      </section>
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+        <form class="radio-group-container">
+          <label class="radio-label">
+            <input type="radio" name="opt" checked /> Brand New
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="opt" /> Refurbished
+          </label>
+        </form>
+        <h4>Code:</h4>
+        <code>&lt;input type="radio" name="opt"&gt;</code>
+      </section>
+
+      <section class="element">
+        <h3>Image as a Link (With Hover Animation)</h3>
+        <p>Hover to see the zoom and overlay effect.</p>
+        <a href="#" class="image-link-wrapper">
+          <img
+            src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=600"
+            alt="Tech Setup"
+          />
+          <div class="image-overlay">
+            <strong>View Workstations &rarr;</strong>
+          </div>
+        </a>
+        <h4>Code:</h4>
+        <pre><code>.image-link-wrapper:hover img { transform: scale(1.15); }</code></pre>
+      </section>
+    </section>
+
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+        <h1>Heading Level 1</h1>
+        <h2>Heading Level 2</h2>
+        <h3>Heading Level 3</h3>
+        <h4>Heading Level 4</h4>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+        <p>
+          ArcTech is committed to reducing e-waste. By refurbishing high-end
+          electronics, we extend the lifecycle of valuable materials while
+          providing premium performance to our customers. ArcTech is a
+          <strong style="color: var(--primary)">green</strong> company. ArcTech
+          is a <em>premium</em> company.
+        </p>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        <ol style="margin-left: 20px; font-family: var(--font-body)">
+          <li>Inspect device hardware for defects.</li>
+          <li>Perform deep software diagnostics.</li>
+          <li>Certify device for resale on platform.</li>
+        </ol>
+      </section>
+
+      <section class="element">
+        <h3>Unordered Lists</h3>
+        <ul style="margin-left: 20px; font-family: var(--font-body)">
+          <li>Inspect device hardware for defects.</li>
+          <li>Perform deep software diagnostics.</li>
+          <li>Certify device for resale on platform.</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+        <nav class="navbar">
+          <div class="logo">
+            <a href="index.html">Arc<span>Tech</span></a>
+          </div>
+          <div class="nav-items">
+            <a href="products.html">Shop</a>
+            <a href="index.html" class="active-link">Style Guide</a>
+            <a href="checkout.html">Cart (3)</a>
+          </div>
+        </nav>
+      </section>
+
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+        <article class="product-card">
+          <div class="product-img-box">
+            <img
+              src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&q=80&w=600"
+              alt="ArcTech Monitor"
+            />
+          </div>
+          <div class="product-details">
+            <h4 class="product-title">UltraWide 4K Monitor</h4>
+            <p class="product-desc">144Hz, IPS Panel, USB-C Docking.</p>
+            <span class="price">$599.00</span>
+            <button class="btn btn-primary w-full">Add to Cart</button>
+            <button class="btn btn-ghost w-full mt-small">View Details</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="element">
+        <h3>Payment Form</h3>
+        <form class="max-w-400">
+          <label class="form-label">Card Details</label>
+          <input
+            type="text"
+            placeholder="0000 0000 0000 0000"
+            class="mb-small"
+          />
+
+          <label class="form-label">Payment Method</label>
+          <div class="radio-group-container">
+            <label class="radio-label">
+              <input type="radio" name="pay" checked /> Credit
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="pay" /> PayPal
+            </label>
+          </div>
+
+          <button class="btn btn-primary w-full">Pay Now</button>
+        </form>
+      </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+        <div class="cart-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>UltraWide 4K Monitor</td>
+                <td>$599.00</td>
+              </tr>
+              <tr>
+                <td>Mechanical Keyboard</td>
+                <td>$149.00</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Total</td>
+                <td>$748.00</td>
+              </tr>
+            </tfoot>
+          </table>
+
+          <div class="cart-actions">
+            <button class="btn btn-primary w-full">Proceed to Checkout</button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="branding">
+      <h2>Brand Definition</h2>
+      <div class="element">
+        <h3>Color Palette & Typography</h3>
+        <p>
+          A high-contrast technical palette featuring our signature Emerald
+          Green.
+        </p>
+
+        <div class="brand-swatches" style="margin-top: 20px">
+          <div class="swatch-card">
+            <div class="swatch-color bg-primary"></div>
+            <div class="swatch-info"><strong>Arc Green</strong> #009854</div>
+          </div>
+          <div class="swatch-card">
+            <div class="swatch-color bg-secondary"></div>
+            <div class="swatch-info"><strong>Secondary</strong> #E0B94A</div>
+          </div>
+          <div class="swatch-card">
+            <div class="swatch-color bg-accent"></div>
+            <div class="swatch-info"><strong>Charcoal</strong> #111827</div>
+          </div>
+          <div class="swatch-card">
+            <div class="swatch-color bg-white"></div>
+            <div class="swatch-info"><strong>White</strong> #FFFFFF</div>
+          </div>
+        </div>
+
+        <h4>Typography Spec</h4>
+        <div class="typography-spec">
+          <!-- Heading Spec -->
+          <div class="type-row">
+            <div class="type-meta">
+              <span class="type-label">Headings</span>
+              <span class="type-name">Montserrat</span>
+            </div>
+            <div class="type-example">
+              <div
+                class="big-aa"
+                style="font-family: var(--font-head); font-weight: 700"
+              >
+                Aa
+              </div>
+              <div class="type-details">
+                <p class="sample-heading" style="font-size: 1.5rem">
+                  The quick brown fox jumps over the lazy dog.
+                </p>
+                <span class="type-weight"
+                  >Weight: Bold (700) • Usage: H1-H4</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Body Spec -->
+          <div class="type-row">
+            <div class="type-meta">
+              <span class="type-label">Body Text</span>
+              <span class="type-name">Inter</span>
+            </div>
+            <div class="type-example">
+              <div
+                class="big-aa"
+                style="font-family: var(--font-body); font-weight: 400"
+              >
+                Aa
+              </div>
+              <div class="type-details">
+                <p class="sample-body">
+                  The quick brown fox jumps over the lazy dog.
+                </p>
+                <span class="type-weight"
+                  >Weight: Regular (400) • Usage: Paragraphs, UI</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="brand_context">
+      <h2>Brand Context Application</h2>
+      <div class="element">
+        <h3>Homepage Components</h3>
+        <p>
+          These mockups demonstrate how ArcTech's design system comes together
+          to create a high-impact, trustworthy user interface.
+        </p>
+
+        <h4>Hero Banner Mockup</h4>
+        <div class="hero-mockup">
+          <div class="hero-content">
+            <h3>Next-Gen Performance.</h3>
+            <p>
+              Equip your workspace with certified refurbished tech that performs
+              like new. Sustainable, powerful, and ready for work.
+            </p>
+            <div class="button-group hero-btns">
+              <button class="btn btn-primary">Shop Collection</button>
+              <button class="btn btn-ghost-light">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+        <h4>Feature Highlights Mockup</h4>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h4>Certified Quality</h4>
+            <p>Every device passes a 50-point inspection process.</p>
+          </div>
+          <div class="feature-card">
+            <h4>2-Year Warranty</h4>
+            <p>We stand by our tech with industry-leading coverage.</p>
+          </div>
+          <div class="feature-card">
+            <h4>Carbon Neutral</h4>
+            <p>Shipping and refurbishment are 100% offset.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="templates">
+      <h2>Template Pages</h2>
+      <div class="element">
+        <h3>Responsive Web Templates</h3>
+        <p>
+          These template pages demonstrate the ArcTech design system applied to
+          complete, responsive web page layouts. Click to view each template.
+        </p>
+
+        <div class="template-links">
+          <a href="products.html" class="template-card">
+            <div class="template-card-preview">Shop</div>
+            <div class="template-card-info">
+              <h4>Product Listing Page</h4>
+              <p>
+                Browse certified refurbished tech products with filtering,
+                responsive grid layout, and navigation.
+              </p>
+            </div>
+          </a>
+
+          <a href="checkout.html" class="template-card">
+            <div class="template-card-preview">Checkout</div>
+            <div class="template-card-info">
+              <h4>Checkout Page</h4>
+              <p>
+                Complete shopping cart, order summary, and payment form with
+                shipping details.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="citations">
+      <h2>Citations</h2>
+      <div class="element">
+        <h3>Resources &amp; Attributions</h3>
+        <p>The following external resources were used in this style guide.</p>
+
+        <ul class="citations-list">
+          <li>
+            <strong>Montserrat Font</strong> — Google Fonts.<br />
+            <a
+              href="https://fonts.google.com/specimen/Montserrat"
+              target="_blank"
+              rel="noopener"
+              >https://fonts.google.com/specimen/Montserrat</a
+            >
+          </li>
+          <li>
+            <strong>Inter Font</strong> — Google Fonts.<br />
+            <a
+              href="https://fonts.google.com/specimen/Inter"
+              target="_blank"
+              rel="noopener"
+              >https://fonts.google.com/specimen/Inter</a
+            >
+          </li>
+          <li>
+            <strong>Tech Setup Photo</strong> — Unsplash.<br />
+            <a
+              href="https://images.unsplash.com/photo-1550745165-9bc0b252726f"
+              target="_blank"
+              rel="noopener"
+              >https://images.unsplash.com/photo-1550745165-9bc0b252726f</a
+            >
+          </li>
+          <li>
+            <strong>Monitor Photo</strong> — Unsplash.<br />
+            <a
+              href="https://images.unsplash.com/photo-1593640408182-31c70c8268f5"
+              target="_blank"
+              rel="noopener"
+              >https://images.unsplash.com/photo-1593640408182-31c70c8268f5</a
+            >
+          </li>
+          <li>
+            <strong>Laptop Photo</strong> — Unsplash.<br />
+            <a
+              href="https://images.unsplash.com/photo-1496181133206-80ce9b88a853"
+              target="_blank"
+              rel="noopener"
+              >https://images.unsplash.com/photo-1496181133206-80ce9b88a853</a
+            >
+          </li>
+          <li>
+            <strong>Keyboard Photo</strong> — Unsplash.<br />
+            <a
+              href="https://images.unsplash.com/photo-1587829741301-dc798b83add3"
+              target="_blank"
+              rel="noopener"
+              >https://images.unsplash.com/photo-1587829741301-dc798b83add3</a
+            >
+          </li>
+          <li>
+            <strong>Mouse Photo</strong> — Unsplash.<br />
+            <a
+              href="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46"
+              target="_blank"
+              rel="noopener"
+              >https://images.unsplash.com/photo-1527864550417-7fd91fc51a46</a
+            >
+          </li>
+          <li>
+            <strong>Headphones Photo</strong> — Unsplash.<br />
+            <a
+              href="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+              target="_blank"
+              rel="noopener"
+              >https://images.unsplash.com/photo-1505740420928-5e560c06d30e</a
+            >
+          </li>
+          <li>
+            <strong>Webcam Photo</strong> — Unsplash.<br />
+            <a
+              href="https://images.unsplash.com/photo-1611532736597-de2d4265fba3"
+              target="_blank"
+              rel="noopener"
+              >https://images.unsplash.com/photo-1611532736597-de2d4265fba3</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
