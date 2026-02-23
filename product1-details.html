@@ -20,10 +20,10 @@
   </head>
 
   <body class="page-body">
-    <!-- Site navigation bar - consistent across all pages -->
+    <!-- site navbar -->
     <nav class="navbar site-navbar">
       <div class="logo">
-        <a href="index.html">Arc<span>Tech</span></a>
+        <a href="home.html">Arc<span>Tech</span></a>
       </div>
       <div class="nav-items">
         <a href="about.html">About</a>
@@ -35,165 +35,181 @@
     </nav>
 
     <main class="product-detail-container">
-        <!-- Breadcrumb navigation -->
-        <div class="breadcrumbs">
-            <a href="products.html">Shop</a>
-            <span> &gt; </span>
-            <span>UltraSharp 27 Monitor</span>
+      <!-- Breadcrumb navigation -->
+      <div class="breadcrumbs">
+        <a href="products.html">Shop</a>
+        <span> &gt; </span>
+        <span>UltraSharp 27 Monitor</span>
+      </div>
+
+      <!-- css grid product layout (responsive) -->
+      <div class="product-detail-grid">
+        <!-- Product Image (left side) -->
+        <div class="product-image-box">
+          <div class="main-image">
+            <img
+              src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&q=80&w=600"
+              alt="Alienware UltraSharp 27 Monitor"
+              class="product-detail-image"
+            />
+          </div>
+
+          <!-- Thumbnail images (below main product image) -->
+          <div class="thumbnail-row">
+            <img
+              src="https://images.unsplash.com/photo-1597943844364-751d5a757d59?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Thumbnail 1"
+            />
+            <img
+              src="https://imageio.forbes.com/specials-images/imageserve/66eb23a2ca2c2634bb3d5a93/AW3225QF-Alienware-Gaming-Monitor/0x0.png?width=960&dpr=1"
+              alt="Thumbnail 2"
+            />
+            <img
+              src="https://imageio.forbes.com/specials-images/imageserve/66eb247ef1cb6c4128f78897/Alienware-monitor-button---connector-layout/960x0.png?format=png&width=1440"
+              alt="Thumbnail 3"
+            />
+          </div>
         </div>
 
-        <!-- Product Detail Grid -->
-        <div class="product-detail-grid">
-            <!-- Product Image (left side) -->
-            <div class="product-image-box">
-                <div class="main-image">
-                <img 
-                src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&q=80&w=600" 
-                alt="Alienware UltraSharp 27 Monitor" 
-                class="product-detail-image" 
-                />
-                </div>
+        <!-- Product Info (right side) -->
+        <div class="product-info-box">
+          <h1 class="product-title">UltraSharp 27 Monitor</h1>
+          <span class="price">$599.00</span>
+          <hr />
+          <p class="product-desc">
+            Experience stunning visuals with the UltraSharp 27 Monitor.
+            Featuring a 27-inch IPS display with 4K resolution, this monitor
+            delivers vibrant colors and sharp details. Perfect for creative
+            professionals and productivity enthusiasts.
+          </p>
 
-                <!-- Thumbnail images (below main product image) -->
-                <div class="thumbnail-row">
-                    <img 
-                    src="https://images.unsplash.com/photo-1597943844364-751d5a757d59?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                    alt="Thumbnail 1"
-                    />
-                    <img 
-                    src="https://imageio.forbes.com/specials-images/imageserve/66eb23a2ca2c2634bb3d5a93/AW3225QF-Alienware-Gaming-Monitor/0x0.png?width=960&dpr=1" 
-                    alt="Thumbnail 2"
-                    />
-                    <img 
-                    src="https://imageio.forbes.com/specials-images/imageserve/66eb247ef1cb6c4128f78897/Alienware-monitor-button---connector-layout/960x0.png?format=png&width=1440" 
-                    alt="Thumbnail 3">
-                </div>
+          <div class="qty-control">
+            <button class="qty-btn">-</button>
+            <span class="qty-value">1</span>
+            <button class="qty-btn">+</button>
+          </div>
+
+          <div class="button-group">
+            <a href="checkout.html" class="btn btn-reset w-full">Add to Cart</a>
+            <a href="checkout.html" class="btn btn-primary w-full"
+              >Buy it Now</a
+            >
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-item">
+              <strong>Sustainability First:</strong> Every refurbished product
+              is rigorously tested and certified to perform like new, reducing
+              electronic waste and preserving resources.
             </div>
-
-            <!-- Product Info (right side) -->
-            <div class="product-info-box">
-                <h1 class="product-title">UltraSharp 27 Monitor</h1>
-                <span class="price">$599.00</span>
-                <hr>
-                <p class="product-desc">
-                    Experience stunning visuals with the UltraSharp 27 Monitor. 
-                    Featuring a 27-inch IPS display with 4K resolution, this monitor delivers vibrant colors and sharp details. 
-                    Perfect for creative professionals and productivity enthusiasts.
-                </p>
-
-                <div class="qty-control">
-                    <button class="qty-btn">-</button>
-                    <span class="qty-value">1</span>
-                    <button class="qty-btn">+</button>
-                </div>
-
-                <div class="button-group">
-                    <a href="checkout.html" class="btn btn-reset w-full">Add to Cart</a>
-                    <a href="checkout.html" class="btn btn-primary w-full">Buy it Now</a>
-                </div>
-
-                <div class="feature-box">
-                    <div class="feature-item">
-                        <strong>Sustainability First:</strong> Every refurbished product is rigorously tested and certified to perform like new, 
-                        reducing electronic waste and preserving resources.
-                    </div>
-                    <div class="feature-item">
-                        <strong>Quality Guranteed:</strong> 2-year warrantee on all products, no exceptions.
-                    </div>
-                    <div class="feature-item">
-                        <strong>Customer Focused:</strong> Free shipping and hassle-free returns.
-                    </div>
-                    <div class="feature-item">
-                        <strong>Transparency:</strong> Clear grading system so you know exactly what you're getting.
-                    </div>
-                </div>
+            <div class="feature-item">
+              <strong>Quality Guranteed:</strong> 2-year warrantee on all
+              products, no exceptions.
             </div>
+            <div class="feature-item">
+              <strong>Customer Focused:</strong> Free shipping and hassle-free
+              returns.
+            </div>
+            <div class="feature-item">
+              <strong>Transparency:</strong> Clear grading system so you know
+              exactly what you're getting.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="product-tabs-section">
+        <!-- Tab buttons -->
+        <div class="tabs-nav">
+          <button class="tabs-btn active-tab">Overview</button>
+          <button class="tabs-btn">Specifications</button>
+          <button class="tabs-btn">Shipping & Return</button>
+          <button class="tabs-btn">Reviews</button>
         </div>
 
-        <section class="product-tabs-section">
-            <!-- Tab buttons -->
-             <div class="tabs-nav">
-                <button class="tabs-btn active-tab">Overview</button>
-                <button class="tabs-btn">Specifications</button>
-                <button class="tabs-btn">Shipping & Return</button>
-                <button class="tabs-btn">Reviews</button>
-             </div>
+        <div class="tab-content active-content">
+          <div class="detail-row">
+            <div class="detail-text">
+              <p>
+                The UltraWide 4K Monitor with 144Hz refresh rate is designed for
+                professionals who demand precision, performance, and workspace
+                flexibility. Featuring a stunning IPS panel with ultra-accurate
+                color reproduction and wide viewing angles, this display
+                delivers exceptional clarity and detail across an expansive
+                ultrawide canvas. Whether you're editing high-resolution video,
+                designing complex graphics, coding, or managing multiple
+                workflows, the 4K resolution provides the screen real estate you
+                need to stay productive and focused.
+              </p>
+            </div>
 
-             <div class="tab-content active-content">
+            <div class="detail-image">
+              <img
+                src="https://images.unsplash.com/photo-1597943844364-751d5a757d59?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="UltraWide 4K Monitor displaying a colorful image"
+              />
+            </div>
+          </div>
 
-                <div class="detail-row">
-                    <div class="detail-text">
-                        <p>
-                            The UltraWide 4K Monitor with 144Hz refresh rate is designed for professionals who demand precision, performance, and workspace flexibility. 
-                            Featuring a stunning IPS panel with ultra-accurate color reproduction and wide viewing angles, this display delivers exceptional clarity and 
-                            detail across an expansive ultrawide canvas. Whether you're editing high-resolution video, designing complex graphics, coding, or managing 
-                            multiple workflows, the 4K resolution provides the screen real estate you need to stay productive and focused.
-                        </p>
-                    </div>
+          <div class="detail-row reverse">
+            <div class="detail-image">
+              <img
+                src="https://imageio.forbes.com/specials-images/imageserve/66eb247ef1cb6c4128f78897/Alienware-monitor-button---connector-layout/960x0.png?format=png&width=1440"
+                alt="UltraWide 4K Monitor specifications and ports"
+              />
+            </div>
 
-                    <div class="detail-image">
-                        <img 
-                        src="https://images.unsplash.com/photo-1597943844364-751d5a757d59?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                        alt="UltraWide 4K Monitor displaying a colorful image"
-                        />
-                    </div>
-                </div>
-                    
-                <div class="detail-row reverse">
-                    <div class="detail-image">
-                        <img 
-                        src="https://imageio.forbes.com/specials-images/imageserve/66eb247ef1cb6c4128f78897/Alienware-monitor-button---connector-layout/960x0.png?format=png&width=1440" 
-                        alt="UltraWide 4K Monitor specifications and ports"
-                        />
-                    </div>
+            <div class="detail-text">
+              <p>
+                The monitor's connectivity options include USB-C with power
+                delivery, DisplayPort, and HDMI, allowing you to easily connect
+                laptops, desktops, and peripherals. The USB-C port can deliver
+                up to 90W of power, enabling you to charge your laptop while
+                using the monitor as a docking station. With its sleek design,
+                adjustable stand, and VESA compatibility, the UltraWide 4K
+                Monitor offers both form and function for a seamless workspace
+                experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                    <div class="detail-text">
-                        <p>
-                            The monitor's connectivity options include USB-C with power delivery, DisplayPort, and HDMI, allowing you to easily connect laptops, desktops, and peripherals. 
-                            The USB-C port can deliver up to 90W of power, enabling you to charge your laptop while using the monitor as a docking station. 
-                            With its sleek design, adjustable stand, and VESA compatibility, the UltraWide 4K Monitor offers both form and function for a seamless workspace experience.
-                        </p>
-                    </div>
-                </div>
-             </div>
-        </section>
-
-        <h4 style="margin-top: 40px">Recent Customer Reviews</h4>
-        <div class="reviews-list" style="margin-top: 15px">
-          <article
-            class="review-item"
+      <h4 style="margin-top: 40px">Recent Customer Reviews</h4>
+      <div class="reviews-list" style="margin-top: 15px">
+        <article
+          class="review-item"
+          style="
+            padding: 20px;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            margin-bottom: 15px;
+          "
+        >
+          <div
             style="
-              padding: 20px;
-              background: white;
-              border: 1px solid #e5e7eb;
-              border-radius: 8px;
-              margin-bottom: 15px;
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 10px;
             "
           >
-            <div
-              style="
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: 10px;
-              "
-            >
-              <strong>UltraWide 4K Monitor</strong>
-              <span style="color: var(--primary)">★★★★★</span>
-            </div>
-            <p style="font-weight: 600; margin-bottom: 5px">
-              "Best monitor I've ever owned!"
-            </p>
-            <p style="color: #666; font-size: 0.95rem">
-              The picture quality is incredible and you can't even tell it's
-              refurbished. Saved $200 compared to buying new. Highly recommend
-              ArcTech!
-            </p>
-            <span style="font-size: 0.85rem; color: #9ca3af"
-              >Sarah M. | Jan 2025</span
-            >
-          </article>
-        </div>
-
+            <strong>UltraWide 4K Monitor</strong>
+            <span style="color: var(--primary)">★★★★★</span>
+          </div>
+          <p style="font-weight: 600; margin-bottom: 5px">
+            "Best monitor I've ever owned!"
+          </p>
+          <p style="color: #666; font-size: 0.95rem">
+            The picture quality is incredible and you can't even tell it's
+            refurbished. Saved $200 compared to buying new. Highly recommend
+            ArcTech!
+          </p>
+          <span style="font-size: 0.85rem; color: #9ca3af"
+            >Sarah M. | Jan 2025</span
+          >
+        </article>
+      </div>
     </main>
 
     <!-- Footer section - same as other pages -->
@@ -223,5 +239,5 @@
         </p>
       </div>
     </footer>
-    </body>
-  </html>
+  </body>
+</html>
