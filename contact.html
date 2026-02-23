@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ArcTech - Shop certified refurbished tech products including monitors, laptops, keyboards, and accessories."
+    />
+    <title>Shop Products | ArcTech</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="page-body">
+    <!-- Site navigation bar - consistent across all pages -->
+    <nav class="navbar site-navbar">
+      <div class="logo">
+        <a href="index.html">Arc<span>Tech</span></a>
+      </div>
+      <div class="nav-items">
+        <a href="products.html">Shop</a>
+        <a href="index.html">Style Guide</a>
+        <a href="contact.html" class="active-link">Contact</a>
+        <a href="checkout.html">Cart (3)</a>
+      </div>
+    </nav>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="element">
+        <h3>Get in Touch</h3>
+        <p>
+          Have questions about our products or services? We'd love to hear from
+          you! Fill out the form below or reach us through any of our contact
+          channels.
+        </p>
+
+        <!-- contact form - not hooked up to anything, just for demo -->
+        <form class="contact-form" style="margin-top: 20px">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" placeholder="Jane Smith" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-email"
+                >Email Address</label
+              >
+              <input
+                type="text"
+                id="contact-email"
+                placeholder="jane@example.com"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-subject">Subject</label>
+            <input
+              type="text"
+              id="contact-subject"
+              placeholder="Question about an order"
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact-message">Message</label>
+            <textarea
+              id="contact-message"
+              rows="4"
+              placeholder="How can we help you?"
+              style="
+                width: 100%;
+                max-width: 100%;
+                max-height: 200px;
+                padding: 12px;
+                border: 1px solid #d1d5db;
+                border-radius: 4px;
+                font-family: var(--font-body);
+                resize: vertical;
+              "
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+        <h4>Other Ways to Reach Us</h4>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+          "
+        >
+          <div>
+            <strong>Email</strong><br />
+            <a href="mailto:support@arctech.com">support@arctech.com</a>
+          </div>
+          <div>
+            <strong>Phone</strong><br />
+            1-800-ARC-TECH (272-8324)
+          </div>
+          <div>
+            <strong>Address</strong><br />
+            8888 University Dr.<br />
+            Burnaby, BC V5A 1S6
+          </div>
+          <div>
+            <strong>Hours</strong><br />
+            Mon-Fri: 9am - 6pm PST<br />
+            Sat: 10am - 4pm PST
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section id="feedback">
+      <h2>Product Feedback</h2>
+      <div class="element">
+        <h3>Share Your Experience</h3>
+        <p>
+          We value your feedback! Let us know about your experience with ArcTech
+          products. Your reviews help other customers make informed decisions
+          and help us improve.
+        </p>
+
+        <!-- product review form -->
+        <form class="feedback-form" style="margin-top: 20px">
+          <div class="form-group">
+            <label class="form-label" for="review-product"
+              >Product Purchased</label
+            >
+            <select
+              id="review-product"
+              style="
+                width: 100%;
+                max-width: 400px;
+                padding: 12px;
+                border: 1px solid #d1d5db;
+                border-radius: 4px;
+                font-family: var(--font-body);
+              "
+            >
+              <option value="">Select a product...</option>
+              <option value="monitor">UltraWide 4K Monitor</option>
+              <option value="laptop">ProBook Laptop 15"</option>
+              <option value="keyboard">Mechanical Keyboard</option>
+              <option value="mouse">Ergonomic Mouse</option>
+              <option value="headphones">Studio Headphones</option>
+              <option value="webcam">HD Webcam Pro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Rating</label>
+            <div class="radio-group-container">
+              <label class="radio-label"
+                ><input type="radio" name="rating" value="5" /> ★★★★★
+                Excellent</label
+              >
+              <label class="radio-label"
+                ><input type="radio" name="rating" value="4" /> ★★★★☆
+                Good</label
+              >
+              <label class="radio-label"
+                ><input type="radio" name="rating" value="3" /> ★★★☆☆
+                Average</label
+              >
+              <label class="radio-label"
+                ><input type="radio" name="rating" value="2" /> ★★☆☆☆ Below
+                Average</label
+              >
+              <label class="radio-label"
+                ><input type="radio" name="rating" value="1" /> ★☆☆☆☆
+                Poor</label
+              >
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="review-title">Review Title</label>
+            <input
+              type="text"
+              id="review-title"
+              placeholder="Sum up your experience"
+              style="max-width: 400px"
+            />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="review-text">Your Review</label>
+            <textarea
+              id="review-text"
+              rows="4"
+              placeholder="Tell us what you liked or didn't like about the product..."
+              style="
+                width: 100%;
+                max-width: 100%;
+                max-height: 200px;
+                padding: 12px;
+                border: 1px solid #d1d5db;
+                border-radius: 4px;
+                font-family: var(--font-body);
+                resize: vertical;
+              "
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="radio-label">
+              <input type="checkbox" id="recommend" /> I would recommend this
+              product to a friend
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit Review</button>
+        </form>
+      </div>
+    </section>
+    </body>
+
+    <footer class="page-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo">Arc<span>Tech</span></div>
+          <p>Certified refurbished tech for a sustainable future.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <a href="index.html">Style Guide</a>
+          <a href="products.html">Shop Products</a>
+          <a href="checkout.html">Checkout</a>
+        </div>
+        <div class="footer-links">
+          <h3>Support</h3>
+          <a href="contact.html#contact">Contact Us</a>
+          <a href="index.html#about_company">About Us</a>
+          <a href="contact.html#feedback">Leave a Review</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 ArcTech. All rights reserved. |
+          <a href="index.html#citations">Citations</a>
+        </p>
+      </div>
+    </footer>
+</html>
