@@ -178,13 +178,19 @@ h1 {
 }
 
 .github-link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 5px;
+  vertical-align: middle;
 }
 
 .github-logo {
   width: 20px;
+}
+
+.bottom .github-logo {
+  width: 17px;
+  margin-bottom: 4px;
 }
 
 /* Swatch Utilities */
