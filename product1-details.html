@@ -20,6 +20,7 @@
   </head>
 
   <body class="page-body">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <!-- site navbar -->
     <nav class="navbar site-navbar">
       <div class="logo">
@@ -33,7 +34,7 @@
       </div>
     </nav>
 
-    <main class="product-detail-container">
+    <main id="main-content" class="product-detail-container">
       <!-- Breadcrumb navigation -->
       <div class="breadcrumbs">
         <a href="products.html">Shop</a>
@@ -83,9 +84,9 @@
           </p>
 
           <div class="qty-control">
-            <button class="qty-btn">-</button>
+            <button class="qty-btn" aria-label="Decrease quantity">-</button>
             <span class="qty-value">1</span>
-            <button class="qty-btn">+</button>
+            <button class="qty-btn" aria-label="Increase quantity">+</button>
           </div>
 
           <div class="button-group">
